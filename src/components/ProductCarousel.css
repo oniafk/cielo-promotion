@@ -1,0 +1,66 @@
+/* ProductCarousel.css */
+.carousel-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 3rem 0;  /* Increased vertical padding */
+}
+
+.carousel-slider {
+  width: 100%;
+  height: 507px;  /* Increased by an additional 30% from 390px */
+  position: relative;
+}
+
+.carousel-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  max-height: 507px;  /* Increased by an additional 30% from 390px */
+  width: 100%;
+}
+
+.carousel-slider .swiper-slide {
+  width: clamp(254px, 25.5vw, 495px);  /* Increased by an additional 30% */
+  height: clamp(254px, 25.5vw, 495px); /* Increased by an additional 30% */
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+/* .carousel-slider .swiper-slide {
+  background: rgba(9, 21, 50, 0.2);
+  border-radius: 25px;
+} */
+
+/* .carousel-slider .swiper-slide.swiper-slide-next,
+.carousel-slider .swiper-slide.swiper-slide-prev {
+  background: rgba(9, 21, 50, 0.75);
+} */
+
+/* .carousel-slider .swiper-slide.swiper-slide-active {
+  background: #0762e5;
+  box-shadow: 0 0 25px 2px rgba(255, 255, 255, 0.7);
+} */
+
+.carousel-slider .item-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+  transition: all 300ms ease;
+}
